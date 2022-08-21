@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Checkbox, Container, Form } from 'semantic-ui-react';
+import { Form } from 'semantic-ui-react';
 
 import styles from '../Form.module.css';
 
@@ -10,17 +10,8 @@ export default function StepB(props) {
     major: '',
     year_of_grad: '',
   });
-  const [school, setschool] = useState([]);
-  function onAddExp() {
-    setschool([...school, state]);
-    props.onChange('school', school);
-    setstate({
-      school: '',
-      degree: '',
-      major: '',
-      year_of_grad: '',
-    });
-  }
+ 
+ 
 
   function onChange(evt, data) {
     let nam = evt.target.name;

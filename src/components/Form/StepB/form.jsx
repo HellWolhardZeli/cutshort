@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Checkbox, Form, Container } from "semantic-ui-react";
+import { Form } from "semantic-ui-react";
 
 import styles from "../Form.module.css";
 
@@ -11,19 +11,7 @@ export default function StepA(props) {
     end_year: "",
     company_location: "",
   });
-  const [school, setschool] = useState([]);
-  function onAddExp() {
-    setschool([...school, state]);
-    props.onChange("company", school);
-    setstate({
-      company: "",
-      role: "",
-      start_year: "",
-      end_year: "",
-      company_location: "",
-      currently_working: false,
-    });
-  }
+ 
 
   function onChange(evt, data) {
     let nam = evt.target.name;

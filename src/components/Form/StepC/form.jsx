@@ -1,19 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {
-  Button,
-  Checkbox,
   Form,
-  Dropdown,
-  Container,
   Card,
 } from 'semantic-ui-react';
-import person from '../../../../assets/img/person.png'
-import persons from '../../../../assets/img/persons.png'
+import person from '../../../assets/img/person.png'
+import persons from '../../../assets/img/persons.png'
 
-import styles from '../../Form.module.css';
+import styles from '../Form.module.css';
 
 export default function FormUi(props) {
-  // const [Majorcryptocurrencies, setMajorcryptocurrencies] = useState('');
   const [activeLevel, setactiveLevel] = useState('');
   function cardClicked(e, data) {
     setactiveLevel(data.meta);
@@ -38,17 +33,13 @@ export default function FormUi(props) {
                 <div><img src={person} alt="" /></div>
                 <Card.Header
                   className={styles.expertise_card_heading}
-                  // style={{
-                  //   color: activeLevel === 'intermediate' ? 'white' : null,
-                  // }}
+                 
                 >
                  For Myself
                 </Card.Header>
 
                 <Card.Description
-                  // style={{
-                  //   color: activeLevel === 'intermediate' ? 'white' : null,
-                  // }}
+               
                 >
                  Write better. Think more clearly. Stay organized.
                 </Card.Description>
@@ -68,17 +59,13 @@ export default function FormUi(props) {
               <div><img src={persons} alt="" /></div>
                 <Card.Header
                   className={styles.expertise_card_heading}
-                  // style={{
-                  //   color: activeLevel === 'expert' ? 'white' : null,
-                  // }}
+               
                 >
                   With my team
                 </Card.Header>
 
                 <Card.Description
-                  // style={{
-                  //   color: activeLevel === 'expert' ? 'white' : null, 
-                  // }}
+               
                 >
                 {"Wikis, docs, tasks & projects, all in one placeWikis, docs, tasks & projects, all in one place."}
                 </Card.Description>

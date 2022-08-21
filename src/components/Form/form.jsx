@@ -2,49 +2,33 @@ import React, { useState } from "react";
 
 import {
   Button,
-  Checkbox,
   Container,
-  Form,
   Progress,
   Grid,
-  GridColumn,
 } from "semantic-ui-react";
 
 import logo from '../../assets/img/logo.png'
 
-import { ReactComponent as StepAicon } from "../../assets/svg/StepA.svg";
-import { ReactComponent as StepBicon } from "../../assets/svg/StepB.svg";
-import { ReactComponent as StepCicon } from "../../assets/svg/StepC.svg";
-import { ReactComponent as StepDicon } from "../../assets/svg/StepD.svg";
-import { ReactComponent as StepBInicon } from "../../assets/svg/StepBIn.svg";
-import { ReactComponent as StepCInicon } from "../../assets/svg/StepCIn.svg";
-import { ReactComponent as StepDInicon } from "../../assets/svg/StepDIn.svg";
 
 import StepA from "./StepA/form";
 import StepB from "./StepB/form";
 import StepD from "./StepD/form";
-import SubStepA from "./StepC/SubStepA/form";
-import SubStepB from "./StepC/SubStepB/form";
+import StepC from "./StepC/form";
 
 import styles from "./Form.module.css";
-// var slide = 0;
 export default function FormUi({ onChange }) {
-  const steps = ["StepA", "StepB", "SubStepB", "StepD"];
+  const steps = ["StepA", "StepB", "StepC", "StepD"];
   const [activeStep, setActiveStep] = useState("StepA");
   const [progress1, setProgress1] = useState(15);
   const [slide, setSlide] = useState(0);
 
-  // const [slide, setslide] = useState(0);
-  // const activeStep = 'StepA';
 
   function onNext() {
-    // slide++;
   
     if (slide !== 3) {
       const nextSlide = slide +1;
       setSlide(nextSlide);
-      // setslide(5);
-      // setSlide(4);
+    
       setProgress1(progress1 + 33);
       setActiveStep(steps[nextSlide]);
     } 
@@ -54,7 +38,6 @@ export default function FormUi({ onChange }) {
   function onBack() {
    
     if (slide !== 0) {
-      // setslide(0);
       const nextSlide = slide -1;
       setSlide(nextSlide);
       setProgress1(progress1 - 33);
@@ -147,7 +130,7 @@ export default function FormUi({ onChange }) {
                   </Container>
                 );
 
-              case "SubStepB":
+              case "StepC":
                 return (
                   <Container textAlign="center" className={styles.sub_heading}>
                     <h1>How are you planning to use Eden</h1>
@@ -173,8 +156,8 @@ export default function FormUi({ onChange }) {
                   return <StepA onChange={onChange}></StepA>;
                 case "StepB":
                   return <StepB onChange={onChange}></StepB>;
-                case "SubStepB":
-                  return <SubStepB onChange={onChange}></SubStepB>;
+                case "StepC":
+                  return <StepC onChange={onChange}></StepC>;
 
                 case "StepD":
                   return <StepD onChange={onChange}></StepD>;
