@@ -1,17 +1,15 @@
-import React, { useState } from 'react';
-import { Form } from 'semantic-ui-react';
+import React, { useState } from "react";
+import { Form } from "semantic-ui-react";
 
-import styles from '../Form.module.css';
+import styles from "../Form.module.css";
 
 export default function StepB(props) {
   const [state, setstate] = useState({
-    school: '',
-    degree: '',
-    major: '',
-    year_of_grad: '',
+    school: "",
+    degree: "",
+    major: "",
+    year_of_grad: "",
   });
- 
- 
 
   function onChange(evt, data) {
     let nam = evt.target.name;
@@ -26,22 +24,21 @@ export default function StepB(props) {
         <Form.Field fluid>
           <label className={styles.label_color}>Full Name</label>
           <input
-            placeholder='Steve Jobs'
-            name='school'
+            placeholder="Steve Jobs"
+            name="school"
             value={state.school}
             onChange={onChange}
           />
         </Form.Field>
-        <Form.Field  fluid>
+        <Form.Field fluid>
           <label className={styles.label_color}>Display Name</label>
           <input
-            placeholder='Steve'
-            name='degree'
+            placeholder="Steve"
+            name="degree"
             value={state.degree}
             onChange={onChange}
           />
         </Form.Field>
-     
       </Form>
     </div>
   );

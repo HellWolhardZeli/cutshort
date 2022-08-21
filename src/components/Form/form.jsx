@@ -1,14 +1,8 @@
 import React, { useState } from "react";
 
-import {
-  Button,
-  Container,
-  Progress,
-  Grid,
-} from "semantic-ui-react";
+import { Button, Container, Progress, Grid } from "semantic-ui-react";
 
-import logo from '../../assets/img/logo.png'
-
+import logo from "../../assets/img/logo.png";
 
 import StepA from "./StepA/form";
 import StepB from "./StepB/form";
@@ -22,34 +16,30 @@ export default function FormUi({ onChange }) {
   const [progress1, setProgress1] = useState(15);
   const [slide, setSlide] = useState(0);
 
-
   function onNext() {
-  
     if (slide !== 3) {
-      const nextSlide = slide +1;
+      const nextSlide = slide + 1;
       setSlide(nextSlide);
-    
+
       setProgress1(progress1 + 33);
       setActiveStep(steps[nextSlide]);
-    } 
-
-   
+    }
   }
   function onBack() {
-   
     if (slide !== 0) {
-      const nextSlide = slide -1;
+      const nextSlide = slide - 1;
       setSlide(nextSlide);
       setProgress1(progress1 - 33);
       setActiveStep(steps[nextSlide]);
-    } 
-  
+    }
   }
 
   return (
     <div>
       <Container class textAlign="center" style={{ marginTop: "50px" }}>
-    <div><img src={logo} alt="" /></div>
+        <div>
+          <img src={logo} alt="" />
+        </div>
         <Grid>
           <Grid.Column
             width={4}

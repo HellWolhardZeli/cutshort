@@ -1,9 +1,9 @@
-import FormUi from './components/Form/form';
-import React from 'react';
+import FormUi from "./components/Form/form";
+import React from "react";
 
 export default function App() {
   const [state, setState] = React.useState({
-    firstName: '',
+    firstName: "",
   });
   function onChangeHandler(nam, val) {
     setState({
@@ -14,7 +14,6 @@ export default function App() {
   return (
     <div>
       <div>
-      
         <FormUi onChange={onChangeHandler}></FormUi>
       </div>
     </div>

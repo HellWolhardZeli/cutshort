@@ -1,23 +1,27 @@
-import React, { useState } from 'react';
-import { Button, Checkbox, Container, Form, Icon } from 'semantic-ui-react';
-import Tick from '../../../assets/img/tick.png'
-import styles from '../Form.module.css';
+import React, { useState } from "react";
+import { Button, Checkbox, Container, Form, Icon } from "semantic-ui-react";
+import Tick from "../../../assets/img/tick.png";
+import styles from "../Form.module.css";
 
 export default function StepD(props) {
   const [state, setstate] = useState({
-    callPerHr: '',
-    perMsg: '',
+    callPerHr: "",
+    perMsg: "",
   });
   onchange = (e) => {
     setstate({ ...state, [e.target.name]: e.target.value });
-    props.onChange('rate', state);
+    props.onChange("rate", state);
   };
   return (
     <div>
       <div style={styles.completed_circle}></div>
-      <div style={{display:'flex', justifyContent:'center'}}><img src={Tick} alt="" /></div>
-      <h1 style={{textAlign:'center'}}>Congratulations, Eren!</h1>
-      <div className={styles.label_color} style={{textAlign:'center'}} >You have completed onboarding, you an start using Eden</div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <img src={Tick} alt="" />
+      </div>
+      <h1 style={{ textAlign: "center" }}>Congratulations, Eren!</h1>
+      <div className={styles.label_color} style={{ textAlign: "center" }}>
+        You have completed onboarding, you an start using Eden
+      </div>
 
       {/* <Form>
         <Form.Group widths='equal'>
