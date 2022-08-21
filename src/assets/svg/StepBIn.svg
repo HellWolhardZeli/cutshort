@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="47" height="40" viewBox="0 0 47 40">
+  <g id="Group_18" data-name="Group 18" opacity="0.3">
+    <g id="Group_14_Copy" data-name="Group 14 Copy" transform="translate(0 21)">
+      <text id="_100pts" data-name="100pts" transform="translate(0 15)" fill="#4a4a4a" font-size="14" font-family="OpenSans-Semibold, Open Sans" font-weight="600" letter-spacing="0.016em"><tspan x="0" y="0">100pts</tspan></text>
+    </g>
+    <g id="Group_17" data-name="Group 17" transform="translate(10)">
+      <path id="Path" d="M8.985,2.949A5.747,5.747,0,0,1,6.96,2.6L0,.07V4.739A2.257,2.257,0,0,0,1.312,6.916L4.221,7.969a14.044,14.044,0,0,0,9.726,0l2.909-1.053a2.257,2.257,0,0,0,1.312-2.176V0L11.038,2.6A6.018,6.018,0,0,1,8.985,2.949Z" transform="translate(4.542 9.162)" fill="#4a4a4a"/>
+      <path id="Path-2" data-name="Path" d="M26.5,4.423,15.267.316a4.87,4.87,0,0,0-3.451,0L.578,4.423a1.1,1.1,0,0,0,0,1.931l11.238,4.107a4.87,4.87,0,0,0,3.451,0l9.84-3.581V13.27a.733.733,0,0,0-.371.632v.527a.652.652,0,0,0,.371.632l-.656,1.861a.346.346,0,0,0,.2.456l.542.07h.342l.542-.07a.327.327,0,0,0,.2-.456L25.62,15.06a.679.679,0,0,0,.371-.632V13.9a.679.679,0,0,0-.371-.632V6.67l.856-.316A1.086,1.086,0,0,0,26.5,4.423Z" fill="#4a4a4a"/>
+    </g>
+  </g>
+</svg>

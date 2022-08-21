@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="40" viewBox="0 0 38 40">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #5655c6;
+      }
+
+      .cls-2 {
+        font-size: 14px;
+        font-family: OpenSans-Semibold, Open Sans;
+        font-weight: 600;
+        letter-spacing: 0.016em;
+      }
+    </style>
+  </defs>
+  <g id="Group_14" data-name="Group 14" transform="translate(0 0)">
+    <path id="Shape" class="cls-1" d="M20.087,18H.647A.649.649,0,0,1,0,17.355V8.174l8.1,2.174V11.5a.648.648,0,0,0,.646.651h3.238a.647.647,0,0,0,.645-.651V10.348l8.1-2.168v9.175A.648.648,0,0,1,20.09,18ZM9.4,10.853V10.1a.644.644,0,0,0,0-.467h1.938a.653.653,0,0,0,0,.467v.757Zm3.234-1.869a.647.647,0,0,0-.645-.651H8.75a.648.648,0,0,0-.646.651v.023L0,6.828V3.568a.649.649,0,0,1,.585-.645H6.626V.645A.648.648,0,0,1,7.277,0h6.185a.648.648,0,0,1,.651.645V2.922h5.975a.649.649,0,0,1,.651.645v3.27l-8.1,2.172Z" transform="translate(9)"/>
+    <text id="_50pts" data-name="50pts" class="cls-2" transform="translate(0 36)"><tspan x="0" y="0">50pts</tspan></text>
+  </g>
+</svg>
